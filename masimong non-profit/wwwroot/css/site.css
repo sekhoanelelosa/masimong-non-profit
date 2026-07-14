@@ -1,0 +1,407 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+    position: relative;
+    padding-top:100px;
+    background-image: url('/images/background.jpg');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: -1;
+}
+.hero {
+    min-height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:140px 40px 60px;
+    color:white;
+}
+.hero-badge{
+    display:inline-block;
+}
+.hero-content{
+    text-align:left;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    text-align: center;
+    color: white;
+}
+h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    text-align: center;
+    color: white;
+}
+h5 {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    text-align: left;
+    color: white;
+}
+.hero-content {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: auto;
+    text-align: left,justify;
+    color: white;
+}
+
+.hero-buttons {
+        margin-top: 30px;
+}
+
+.hero-buttons a {
+            margin: 10px;
+}
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 80px 20px;
+    flex-wrap: wrap;
+
+}
+
+.stat-card {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 80px 20px;
+        flex-wrap: wrap;
+
+}
+
+.stat-card {
+        background: rgba(255,255,255,.1);
+        backdrop-filter: blur(15px);
+        padding: 30px;
+        border-radius: 20px;
+        min-width: 220px;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0,0,0,.1);
+ }
+
+.features {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 100px 20px;
+        flex-wrap: wrap;
+}
+
+.feature-card {
+        width: 320px;
+        background: white;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,.1);
+        transition: .3s;
+ }
+
+.feature-card:hover {
+            transform: translateY(-10px);
+  }
+
+.btn {
+        border-radius: 0px;
+ }
+
+.btn-primary {
+        border-radius: 30px;
+        padding: 10px 20px;
+        font-weight: 600;
+ }
+
+.glass-navbar {
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        z-index: 9999;
+        background: rgba(255,255,255,0.12);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(255,255,255,0.2);
+        border-radius: 20px;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+        padding: 10px 0;
+        max-width:1400px;
+
+}
+
+.navbar-brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:white;
+    text-decoration:none;
+}
+ .nav-link {
+       transform:translateZ(-2px);
+       color:#38bdf8;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        position: relative
+ }
+
+
+.nav-link:hover {
+            transform: translateY(-2px);
+            color: #38bdf8;
+ }
+
+.nav-link:hover::after {
+                width: 100%;
+ }
+
+.nav-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0;
+            height: 2px;
+            background: #38bdf8;
+            transition: 0.5s;
+ }
+
+.nav-link:hover::after {
+            width: 100%;
+ }
+
+.btn-primary {
+        border-radius: 30px;
+        padding: 10px 20px;
+        font-weight: 600;
+ }
+
+.fade-up {
+        opacity: 1;
+        transform: scale(0.8)translateY(50px);
+        transition: all 0.8s ease;
+ }
+
+.fade-up.show {
+            opacity: 1;
+            transform: scale(1)translateY(0);
+ }
+
+.glass-card {
+        background: rgba(255,255,255,.12);
+        backdrop-filter: blur(15px);
+        border: 1px solid rgba(255,255,255,.2);
+        border-radius: 20px;
+        padding: 25px;
+        color: white;
+        box-shadow: 0 10px 40px rgba(0,0,0,.2);
+ }
+
+
+
+    
+.hero-badge {
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 30px;
+        background: rgba(255,255,255,.15);
+        backdrop-filter: blur(10px);
+        margin-bottom: 20px;
+ }
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 35px;
+    margin-top: 50px;
+    color: #38bdf8;
+    font-weight: 700;
+    margin-bottom: 50px;
+    padding-bottom:60px;
+}
+.projects-grid .card {
+        background: rgba(255,255,255,0.12);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 20px;
+        color: white;
+        box-shadow: 0 10px 30px rgba(0,0,0,.25);
+        transition: all 0.35s ease;
+        overflow: hidden;
+}
+.projects-grid .card-body{
+    padding:30px;
+}
+.projects-grid .card:hover {
+        transform: translateY(-12px) scale(1.02);
+        border-color: rgba(56,189,248,.6);
+        box-shadow: 0 20px 50px rgba(0,0,0,.35), 0 0 25px rgba(56,189,248,.25);
+}
+.projects-grid p {
+        color: rgba(255,255,255,.9);
+        line-height: 1.8;
+        text-align: justify;
+}
+.projects-grid .card::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient( 90deg, #38bdf8, #60a5fa );
+}
+.navbar-logo {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.3);
+    box-shadow: 0 0 15px rgba(56,189,248,.3);
+    transition: all .3s ease;
+}
+
+.navbar-brand:hover .navbar-logo {
+    transform: scale(1.08);
+    box-shadow: 0 0 25px rgba(56,189,248,.5);
+}
+.contact-page {
+    padding: 80px 0;
+}
+.contact-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+.form-control {
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.2);
+    color: white;
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 14px;
+}
+.form-control::placeholder {
+        color: rgba(255,255,255,.6);
+ }
+.form-control:focus {
+        background: rgba(255,255,255,.12);
+        border-color: #38bdf8;
+        color: white;
+        box-shadow: 0 0 15px rgba(56,189,248,.3);
+ }
+.contact-grid .glass-card {
+    padding: 35px;
+}
+@media (max-width: 992px) {
+
+.contact-grid {
+        grid-template-columns: 1fr;
+             }
+}
+
+.projects-gallery{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    margin-top:20px;
+    opacity:0;
+    max-height:0;
+    overflow:hidden;
+    transition:all 0.4s ease;
+}
+.project-gallery img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid rgba(255,255,255,.2);
+    transition: transform .3s ease;
+}
+.projects-grid .card:hover .project-gallery {
+    opacity: 1;
+    max-height: 150px;
+    margin-top: 25px;
+}
+.project-gallery img:hover {
+    transform: scale(1.08);
+    border-color: #38bdf8;
+}
+.image-popup {
+    position: absolute;
+    left: 105%;
+    top: 50%;
+    transform: translateX(50%) scale(.8);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .35s ease;
+    z-index: 100;
+}
+.image-popup img {
+
+    width: 220px;
+
+    height: 140px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    border: 2px solid rgba(255,255,255,.2);
+
+    box-shadow: 0 15px 40px rgba(0,0,0,.45);
+
+    transition: transform .3s ease;
+}
+.projects-grid .card:hover .image-popup {
+    opacity: 1;
+    transform: translateX(50%) scale(1);
+}
+.image-popup img:hover {
+    transform: scale(1.08);
+    border-color: #38bdf8;
+    box-shadow: 0 20px 50px rgba(56,189,248,.4);
+}
